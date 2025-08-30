@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+#define endl '\n'
+#define ll long long
+#define rep(i, n) for (ll i = 0; i < (ll)(n); i++)
+
+int init()
+{
+    cin.tie(nullptr);
+    ios_base::sync_with_stdio(false);
+
+    return 0;
+}
+
+int main()
+{
+    init();
+
+    ll N, X;
+    cin >> N >> X;
+
+    vector<ll> An;
+    rep(i, N)
+    {
+        ll a;
+        cin >> a;
+        An.emplace_back(a);
+    }
+
+    auto target_it = lower_bound(An.begin(), An.end(), X);
+    ll index = distance(An.begin(), target_it);
+
+    cout << index + 1 << endl;
+
+    return 0;
+}
