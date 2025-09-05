@@ -9,6 +9,7 @@
         "source_location": "cpp",
         "stacktrace": "cpp",
         "iostream": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "chrono": "cpp"
     }
 }
